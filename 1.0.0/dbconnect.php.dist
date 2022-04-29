@@ -1,0 +1,31 @@
+<?php
+// translator ready
+// addnews ready
+// mail ready
+/*
+ * This is the dbconnect script.
+ * You should edit the values below (starting on the 18th line) to provide
+ * the necessary information for connecting to your database.  Put the
+ * values inside the quote marks.  A typical example of how the lines
+ * should look is this:
+
+$DB_USER="logduser"; //Database Username
+$DB_PASS="leetsekretpassword"; //Database Password
+$DB_HOST="localhost"; //Database Hostname
+$DB_NAME="logd"; //Database Databasename
+$DB_PREFIX=""; // Database prefix (leave blank unless there is a good reason)
+
+ * Put the appropriate values below.
+*/
+
+$DB_USER=""; //Database Username
+$DB_PASS=""; //Database Password
+$DB_HOST=""; //Database Hostname
+$DB_NAME=""; //Database Databasename
+$DB_PREFIX=""; //Database Prefix (leave blank except for good reason)
+
+if ($DB_USER.$DB_PASS.$DB_HOST.$DB_NAME == ""){
+	// No translation here since we cannot get to the database.
+	echo("You must edit the dbconnect.php file to set it up for your database.");
+}
+?>
