@@ -1,0 +1,56 @@
+Changelog
+
+Changes from 1.1.0 to 1.1.1
+[FIX] - /lib/partner.php set marriedto=0 when called for a player with spouse but w/o the $player variable
+[FIX] - clans now fully functional for custom ranks
+[FIX] - abigail now speaks English with the spouse and is translation ready
+[FIX] - lovers module buff now translatable
+[FIX] - Now several timeout-incorrect login etc message are translatable
+[FIX] - taunts.php: when you saved a new taunt, it did not save the taunt but only inserted a new empty row.
+[FIX] - installer.php did display the 1st recommended module as not recommended, now it does (install did work)
+[FIX] - modules/gardener.php is now translation-ready (questions were not translatable)
+[FIX] - hook queries slightly changed and also added an index at the module_hooks table to "location"
+[FIX] - goodwordlist was not cached which caused the lotgdnet.php to make too many queries
+[FIX] - /modules/outhouse.php had a `2 missing after the name which caused colour errors
+[FIX] - corrected create.php who had two queries with emailvalidation='$id' AND emailvalidation!='' ... where the last part made no sense
+[FIX] - translatortool.php are the namespace+intext now readonly...they should *not* be editable, same goes for untranslated.php
+
+[FEATURE] - clans can now be turned off (auto set to on)
+[FEATURE] - the % you lose when die in the forest is now settable (standard 10%)
+[FEATURE] - the skins now get sorted in natural order, not arbitrary anymore (themes in /lib/showform.php)
+[FEATURE] - now Cedrik (barkeep), Ramius (death overlord) and Karissa (clan registrar) can be (game settings) changed to any name you like. NOTICE TO TRANSLATORS: change "`\$Ramius"to "%s", "Cedrik" to "%s" and also Karissa to "%s" (there may also be other changes needed, but should be very few) in your translations table. (You may use the search+replace function in the Translation Wizard)
+[FEATURE] - modules/avatar.php changed to let the users have linked avatar pictures, coming with a validation in the grotto for moderators. It does not check if it has been changed on the remote server, but it should be ok. You can turn all of this on or off.
+[FEATURE] - /lib/modules.php incorporates an increment_module_objpref function you can use to increase numerical values with little effort. Do not use it for ASCII values! Signature of the function: increment_module_objpref($objtype,$objid,$name,$value=1,$module=false)
+[FEATURE] - addnav_notl($text,$link=false,$priv=false,$pop=false,$popsize="500x300") is now possible, the content in the text won't get translated
+[FEATURE] - added a hook to the gemchance... so you can modify the gem chance via module too. name: "alter-gemchance"
+[FEATURE] - battle.php now knows also a $badguy['hidehitpoints'] which you can set to true in your module when creating it ("hidehitpoints"=>1) and then the enemy will have "?" hitpoints... good for some specials... more exitement. You can drop a line in your module "your enemy is now about half-dead" or so
+[FEATURE] - newday turns after resurrection can now be modified by a game setting (default -6 turns) that handles also a percentage (integer with a % afterwards)... turns can't turn negative and the base is (turns per day) + (dk points spent for turns)
+
+[UPDATE] - now lotgdnet only notices main server at the login. There are no additional "pings" out. This will reduce traffic and increase performance.
+[UPDATE] - Skin selection now gets sorted alphabetically and not anymore in chronological order
+[UPDATE] - moved the char, commentary, debuglog expiration to the newday_runonce (also fixed the debuglog bug when set to 0 days...)
+[UPDATE] - /modules/gardener.php removed the footer-runmodule hook and put in footer-newbieisland. better performance.
+[UPDATE] - Edorians idea of moving the output field from the accounts table to a new table implemented. Now the large output field (needed only for badnavs) is not loaded each pagehit anymore (yet updated like always)
+[UPDATE] - donators.php removed the debugs and made clear outputs, saying the reason and also after the submit a real sentence.
+[UPDATE] - commentary posting limiter (limits posts for one user to 50% of the posting area, normally 10) can be deactivated in the game settings
+[UPDATE] - hooking into events now uses the following hook: #modulehook("runevent_$module", array("type"=>$type, "baselink"=>$baseLink, "get"=>httpallget(), "post"=>httpallpost()));# so you can now hook at "runevent_abigail" and get executed there (pls don't call a page_footer in your module there, only if you know what you do)
+[UPDATE] - added "ob_start('ob_gzhandler');" to the common.php to enable the gzip compression. This will produce a bit more CPU load, but the traffic will decrease by 30%-40% estimated and your users will have the pages displayed usually a bit quicker as less bytes need to be transferred. This setting proved to be worth adding on smaller and bigger servers, so it is now going to be core.
+[UPDATE/FIX] - in the user editor (and if you call the lib/lookup_user.php yourself in any module) you can now use % as tags like in a mysql query. in 1.1.0 it was introduced that you have to enter the *exact* (case-insensitive) name/login of the player. Which was ... not good. Now you can look for an exact match (enter the name normally) or use the % tags to search for any number of letters at this point. I.e. '%man' finds 'Talisman', but not 'Chadmann', 'Tali%' finds 'Talisman', but not 'ReTailMan'.. you can use them at any position (even '%man%' which would find any usernames containing 'man').
+[UPDATE/FIX] - get_module_pref now check first if the pref has been loaded previously and THEN calls load_module_prefs (and check again). As most guys have prefs for certain modules sooner or later, on if-isset afterwards is faster than many function calls who come back empty.
+[UPDATE] - lib/forestoutcomes.php now also shows a creaturewin phrase automatically if entered in the creature table, same like the creaturelose phrase that is displayed normally. also edited creatures.php (small code cleanup)
+[UPDATE] - lib/battleskills has now a is_buff_active($buffname) to determine if a buff is active&not suspended or not active or suspended. If you want to check if the buff exists use hasbuff($buffname)
+[UPDATE] - added a few more key indices to the account table to be more innodb friendly
+[UPDATE] - lib/translator.php modified, now a translate_inline($intext,$namespace=FALSE) is possible, i.e you don't need to construct for a single line a tlschema and reset it afterwards
+[UPDATE] - lib/checkban.php has its messages now in the ban scheme and those are therefore translatable
+[UPDATE] - racenames SHOULD now be adressed within the "race" scheme... translate_inline($session['user']['race'],"race") should therefore get you the race name. For people who don't want to remember the scheme and add a few more chars to their translate_inline please use the function get_racename($thisuser=TRUE). If you want the race of the current user, call get_racename(), if you have fetched the race i.e. from the DB directly for a third user, enter the plain race as parameter $thisuser.
+[UPDATE] - Many module files have been split up into libs to decrease memory usage (lib files for / files in lib/$filename and for modules in /modules/$filename):
+-modules/oldman.php
+-graveyard.php (optimized for tormenting)
+-newday.php (some parts like dk-point spending)
+-modules/cities.php (village doesn't need travels loaded everytime)
+-modules/customeq.php (gets called only in charstats mostly)
+-modules/scavenge.php (village special not executed 20kb of code all the time... only when running it needs it)
+
+
+
+
