@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5"
+   name=""
+   committed-date="2006-05-27T11:21:36.977188Z"
+   url="file:///repository/core-lotgd/lib/graveyard"
+   last-author="root"
+   kind="dir"
+   revision="5"/>
+<entry
+   committed-rev="5"
+   name="case_haunt.php"
+   text-time="2006-05-19T06:50:34.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="33ae20b79d98b356bda0bcf4732b5e4d"
+   last-author="root"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="case_battle_search.php"
+   text-time="2006-05-19T06:50:34.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="a7f779edba755101b43c8f8ebacba48e"
+   last-author="root"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="case_haunt2.php"
+   text-time="2006-05-19T06:50:35.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="1bd811ce107f0d2ad130b5fa948d591a"
+   last-author="root"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="case_haunt3.php"
+   text-time="2006-05-19T06:50:35.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="fd780d333c2e3ef2e06055ff880810c2"
+   last-author="root"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="case_restore.php"
+   text-time="2006-05-19T06:50:35.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="433d826973265b1277babebac6f90e7d"
+   last-author="root"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="case_default.php"
+   text-time="2006-05-19T06:50:35.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="a5adcebac916693ccce0f46280de0cf0"
+   last-author="root"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="case_resurrection.php"
+   text-time="2006-05-19T06:50:34.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="0c09a34664967f3a34839ac6a95e8cca"
+   last-author="root"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="case_question.php"
+   text-time="2006-05-19T06:50:34.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="e49b7b2b6b8ee38bc09c2b70de7528f0"
+   last-author="root"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="case_enter.php"
+   text-time="2006-05-19T06:50:34.000000Z"
+   committed-date="2006-05-27T11:21:36.977188Z"
+   checksum="5c718e8e2937ad8bba09a3ed4b72c805"
+   last-author="root"
+   kind="file"/>
+</wc-entries>

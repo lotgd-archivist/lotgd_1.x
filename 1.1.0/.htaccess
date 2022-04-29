@@ -1,0 +1,3 @@
+<Files cron.php>
+deny from all
+</Files>
