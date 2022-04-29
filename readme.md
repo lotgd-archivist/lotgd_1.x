@@ -7,8 +7,8 @@ All code subject to the terms of the Creative Commons 2.0 BY-NC-SA. Full text of
 ## Known versions:
 
 * [x] 1.0.0
-* [ ] 1.0.1
-* [ ] 1.0.2
+* [x] 1.0.1
+* [x] 1.0.2
 * [x] 1.0.3
 * [ ] 1.0.4
 * [ ] 1.0.5
