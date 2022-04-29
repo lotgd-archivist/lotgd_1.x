@@ -4,6 +4,16 @@ This repository contains the version history, as I could restore it, from 1.0 to
 
 All code subject to the terms of the Creative Commons 2.0 BY-NC-SA. Full text of the license available at http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
 
+## Important notice
+
+This repository is for archival purposes only. I strongly recommend against running these versions. Many of them have known security issues.
+
+If you want to run a 1.x LotGD server, I recommend checking out the the [+nb fork](https://github.com/NB-Core/lotgd).
+
+## Archivist note:
+
+The versions 1.0.6, 1.1.0, and 1.1.1 I could not yet verify as being unmodified / as released. They were thankfully provided to me from a private archive. 
+
 ## Known versions:
 
 * [x] 1.0.0
