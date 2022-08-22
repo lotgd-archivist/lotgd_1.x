@@ -1,0 +1,175 @@
+* {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #003800;
+    color: #CCCCCC;
+}
+
+h1 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight:900;
+}
+
+p, h2 {
+    font-size: 0.8rem;
+}
+
+h2 {
+    margin-bottom: 0px;
+    color: white;
+}
+
+h1, .nav-heading {
+    font-variant: small-caps;
+}
+
+/* perhaps here we could do something like .panel
+where we just have .green-box and add it to the class
+list of these? */
+.top-lotgd, .side-nav, .main-content, .donations-box, .bottom-panel {
+    border: 2px solid #0f460f;
+    border-radius: 5px;
+}
+
+.panel {
+    padding: 0 15px;
+   /* border: 1px dotted #CCCCCC; /* temporary */
+}
+
+/****** TOP PANEL STUFF *******/
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: flex-start;
+}
+
+.top-lotgd {
+    padding-right: 10px;
+}
+
+.top-logo-nav {
+   text-align: end;
+   color:#D1FFD1;
+   font-size: 0.8rem;
+}
+
+.top-logo-nav a, .top-logo-nav p {
+    margin-top: 0px;
+    color:#D1FFD1;
+}
+
+.top-logo-nav a.bold {
+    font-weight: bolder;
+}
+
+.top-logo-nav a:hover {
+    color: yellow;
+}
+
+/****** MIDDLE PANEL STUFF *******/
+.middle-panel {
+    padding: 0 10px; /* middle panel seems to be more horizontally inset than header/footer */
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.side-nav {
+    flex: 1;
+    padding: 0 10px;
+    
+}
+
+.side-nav p{
+    margin-top: 0px;
+}
+
+.side-nav a{
+    color:#D1FFD1;
+    text-decoration: none;
+}
+
+.bold-nav{
+    font-weight: 900;
+    color:#D1FFD1;
+}
+.nav-letter {
+    color: #00FF00;
+	text-decoration: underline; 
+}
+
+.side-nav a:hover {
+    background-color: #015D01;
+	border-top: 1px solid #029402;
+	border-left: 1px solid #029402;
+	border-bottom: 1px solid #013901;
+	border-right: 1px solid #013901;
+}
+
+.nav-heading {
+    text-align: center;
+}
+
+.main-content {
+    flex: 5;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px 10px;
+    gap: 7%;
+}
+
+.main-content p {
+    margin-top: 0px;
+}
+
+.donations-box {
+    text-align: left;
+    padding: 0 10px;
+}
+
+.br-green {
+    color:#00FF00;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.white {
+    color: white;
+}
+
+.yellow {
+    color: yellow;
+}
+
+/****** BOTTOM PANEL STUFF *******/
+
+.bottom-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bottom-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bottom-right {
+    text-align: right;
+}

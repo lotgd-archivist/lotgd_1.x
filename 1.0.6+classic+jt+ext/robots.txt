@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+Disallow: /news.php
+Disallow: /list.php
+Disallow: /create.php
+Disallow: /index.php

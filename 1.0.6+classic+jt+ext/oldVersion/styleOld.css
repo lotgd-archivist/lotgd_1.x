@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+/*	margin: 0;*/
+/*	padding: 0;*/
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: small;
+    background-color: #003800;
+    color: #CCCCCC;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.panel{
+    width: 95%;
+    max-width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.top-panel {
+    justify-content: space-between;  
+}
+
+.header {
+    border: 2px solid #0f460f;
+    border-radius: 5px;
+    flex: 1;
+    color: white;
+}
+
+.logo-header {
+    border: 2px dotted white;
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 15px;
+}
+
+.logo-header a{
+    color: #D1FFD1;
+}
+
+.logo-img {
+    border: 2px dotted white;
+    align-items: flex-end;
+}
+
+.top-links {
+    border: 2px dotted white;
+    
+}
+
+.header ul {
+    font-variant: small-caps;
+    font-family: "Arial Black", "Courier";
+    font-size: 1.5em;
+}
+
+.middle-panel{
+    display: flex;
+    max-width: 95%;
+    border: 2px dotted white;
+}
+.side-nav {
+    border: 2px solid #0f460f;
+    border-radius: 5px;
+    padding: 0px 15px; 
+    width: 15%;
+    font-size: small;
+    margin-right: 10px;
+}
+
+.side-nav p {
+	text-align: left;
+    color: #D1FFD1;
+}
+
+.side-nav h2 {
+	text-align: center;
+    
+    font-variant: small-caps;
+}
+
+.side-nav a{
+    color: #D1FFD1;
+}
+
+.main-content {
+        border: 2px solid #0f460f;
+        border-radius: 5px;
+        padding: 0px 5px;
+        text-align: center;
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+}
+
+.donations-box {
+    text-align: left;
+    border: 2px solid #0f460f;
+    border-radius: 5px;
+    height: 30%;
+    padding: 0px 5px;
+    margin-left: 75px;
+    margin-top: 5px;
+}
+
+.bottom-panel {
+    display: flex;
+    flex-direction: row;
+    border: 2px #0f460f solid;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.bottom-panel a{
+    color: #D1FFD1;
+
+}
+
+.bottom-left {
+    border: 2px dotted white;
+    flex: 1;
+    padding: 0px 15px;
+}
+
+.bottom-right {
+   border: 2px dotted white;
+    text-align: right;
+    flex: 1;
+    padding: 0px 15px;
+}
