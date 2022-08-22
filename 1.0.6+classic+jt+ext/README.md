@@ -4,3 +4,8 @@
 This will start off being a direct copy, then I'll see if I can bring it a bit more up-to-date.
 
 Original website: www.lotgd.net
+
+---
+Archivists note: Please refer to [_ArchvistNotes.md](./_ArchvistNotes.md).
+
+---
