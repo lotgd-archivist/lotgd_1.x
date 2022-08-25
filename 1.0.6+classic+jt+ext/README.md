@@ -6,6 +6,6 @@ This will start off being a direct copy, then I'll see if I can bring it a bit m
 Original website: www.lotgd.net
 
 ---
-Archivists note: Please refer to [_ArchvistNotes.md](./_ArchvistNotes.md).
+Archivists note: Please refer to [_ArchivistNotes.md](_ArchivistNotes.md).
 
 ---
