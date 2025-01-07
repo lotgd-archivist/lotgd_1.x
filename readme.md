@@ -27,5 +27,6 @@ The versions 1.0.6, 1.1.0, and 1.1.1 I could not yet verify as being unmodified 
 * [x] 1.0.6
 * [x] 1.0.6+classic+jt+ext
 * [x] 1.1.0
-* [x] 1.1.0
+* [x] 1.1.1 beta
+* [x] 1.1.1 release
 * [x] 1.1.2
