@@ -1,0 +1,34 @@
+Changelog
+
+Changes from 1.1.1 to 1.2.0
+
+Organise this later. Copied from svn log.
+
+- Now uses foreach() instead of while(list() = each())
+- Removed duplicate output from healer.php
+- Use of file_put_contents()
+- enables ob_gzhandler()
+- AI Scripts no longer creature specfic
+- AI Script editor
+- Installer accepts md5ed password (!md5!hash)
+- List of people that ban affects now has a page for those that can't display the XML using the JS
+- Can now change the clan registrar's gender
+- Settings now a singleton class
+- SU_USER_EDITOR no longer gets newday on bio
+- Commentary now a class
+- Can now change the SQL/PHP executed with the rawsql-execsql/php hooks
+- additional hook allows a module to define a custom nav-group to be listed under in moderation
+- Adds a pref for flipping commentary
+- $templatename must end in .htm or fall back to default
+- Only SU_MEGAUSER can delete characters
+- Added number_format() to exp, gold and gems
+- Added ability to block a target for taunting
+- Invalidates newest cache on character creation
+- Content of accounts_output table now compressed
+- Can check intergerity of core files
+- Database done with classes
+- Database connection done with wrapper classes, so better for abstraction
+- Installer can select which database method to use
+- Advance settings added
+- Option to display if the user's weapon/armour is good enough to level up
+- Changed primary key on bans table to index

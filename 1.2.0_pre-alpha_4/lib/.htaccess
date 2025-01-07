@@ -1,0 +1,6 @@
+<Files *.php>
+deny from all
+</Files>
+<Files md5file>
+deny from all
+</Files>
