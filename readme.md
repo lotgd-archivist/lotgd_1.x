@@ -14,7 +14,9 @@ Version 1.0.6+classic+jt+ext is wholy incompatible with other 1.x.x versions and
 
 ## Archivist note:
 
-The versions 1.0.6, 1.1.0, and 1.1.1 I could not yet verify as being unmodified / as released. They were thankfully provided to me from a private archive. 
+The versions 1.0.6, 1.1.0 I could not yet verify as being unmodified / as released. They were thankfully provided to me from a private archive. 
+
+Version 1.1.1 was provided to me in 3 different states. I am reasonably certain that 1.1.1_beta is the beta version as it was released and 1.1.1_dragonprime is the unmodified full release version. 
 
 ## Known versions:
 
